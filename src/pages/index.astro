@@ -1,11 +1,1010 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+	<nav
+		class="fixed top-0 w-full z-50 bg-guru-bg/90 backdrop-blur-lg border-b border-guru-border"
+	>
+		<div
+			class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+		>
+			<a
+				href="#"
+				class="flex items-center gap-2 font-display font-bold text-2xl tracking-tighter group"
+			>
+				<div
+					class="w-3 h-3 bg-guru-accent group-hover:shadow-[0_0_10px_#00FF41] transition-shadow"
+				>
+				</div>
+				GURU
+			</a>
+
+			<div
+				class="hidden md:flex gap-8 font-mono text-xs font-bold tracking-widest text-guru-dim"
+			>
+				<a
+					href="#architecture"
+					class="hover:text-white hover:underline decoration-guru-accent underline-offset-4 transition-all"
+					>ARCHITECTURE</a
+				>
+				<a
+					href="#harness"
+					class="hover:text-white hover:underline decoration-guru-accent underline-offset-4 transition-all"
+					>HARNESS</a
+				>
+				<a
+					href="#vision"
+					class="hover:text-white hover:underline decoration-guru-accent underline-offset-4 transition-all"
+					>VISION</a
+				>
+				<a
+					href="#pricing"
+					class="hover:text-white hover:underline decoration-guru-accent underline-offset-4 transition-all"
+					>PRICING</a
+				>
+			</div>
+
+			<button
+				class="font-mono text-xs font-bold border border-guru-accent text-guru-accent px-5 py-2 hover:bg-guru-accent hover:text-black transition-all uppercase tracking-wider"
+			>
+				Initialize_v2.0
+			</button>
+		</div>
+	</nav>
+
+	<section
+		class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden border-b border-guru-border bg-guru-bg"
+	>
+		<div
+			class="absolute inset-0 bg-grid-pattern bg-[size:50px_50px] opacity-10"
+		>
+		</div>
+
+		<div
+			class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-guru-accent/5 blur-[120px] rounded-full pointer-events-none"
+		>
+		</div>
+
+		<div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+			<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+				<div class="lg:col-span-7 space-y-8">
+					<div
+						class="inline-flex items-center gap-3 border border-guru-border px-4 py-1.5 rounded-full bg-guru-surface/80 backdrop-blur"
+					>
+						<div
+							class="w-2 h-2 bg-guru-accent rounded-full animate-pulse"
+						>
+						</div>
+						<span
+							class="font-mono text-xs font-medium tracking-widest uppercase text-guru-dim"
+							>System Online</span
+						>
+					</div>
+
+					<h1
+						class="font-display font-bold text-6xl md:text-8xl leading-[0.9] tracking-tighter text-white"
+					>
+						AI MISSION<br />
+						<span class="text-guru-dim">CONTROL.</span>
+					</h1>
+
+					<p
+						class="font-mono text-guru-dim text-lg md:text-xl max-w-xl leading-relaxed border-l-2 border-guru-accent pl-6"
+					>
+						The sovereign runtime for autonomous development. Give
+						agents <strong class="text-white">God Mode</strong> access
+						to your system—governed by absolute safety.
+					</p>
+
+					<div class="flex flex-col sm:flex-row gap-4 pt-6">
+						<button
+							class="bg-white text-black border border-white px-8 py-4 font-mono font-bold uppercase tracking-widest text-sm hover:bg-guru-accent hover:border-guru-accent transition-colors shadow-[4px_4px_0px_rgba(255,255,255,0.2)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)]"
+						>
+							Join Waitlist
+						</button>
+						<button
+							class="border border-guru-border text-guru-dim px-8 py-4 font-mono font-bold uppercase tracking-widest text-sm hover:text-white hover:border-white transition-colors flex items-center gap-3"
+						>
+							<i data-lucide="file-code" class="w-4 h-4"></i>
+							Read Documentation
+						</button>
+					</div>
+				</div>
+
+				<div class="lg:col-span-5 relative mt-10 lg:mt-0">
+					<div
+						class="bg-[#0A0A0A] border border-guru-border shadow-2xl rounded-s"
+					>
+						<div
+							class="bg-[#151515] border-b border-guru-border p-3 flex justify-between items-center"
+						>
+							<div class="flex gap-2">
+								<div class="w-3 h-3 rounded-full bg-[#FF5F56]">
+								</div>
+								<div class="w-3 h-3 rounded-full bg-[#FFBD2E]">
+								</div>
+								<div class="w-3 h-3 rounded-full bg-[#27C93F]">
+								</div>
+							</div>
+							<span class="font-mono text-xs text-guru-dim"
+								>guru-shell — zsh — 80x24</span
+							>
+						</div>
+
+						<div
+							class="p-6 font-mono text-sm h-[360px] flex flex-col relative"
+						>
+							<div
+								class="absolute p-6 pointer-events-none opacity-10 text-[10px] text-white/80 leading-tight overflow-visible z-50 -top-36"
+							>
+								SYSTEM_INIT_OK<br />LOADING_LINERS...<br
+								/>SHADOW_MODE_ACTIVE<br />TELEPATHY_LINKED<br
+								/>...
+							</div>
+
+							<div class="relative z-10">
+								<div class="text-guru-dim mb-2">
+									# Dispatching Engineering Swarm...
+								</div>
+
+								<div
+									class="flex items-center gap-2 text-lg mb-8"
+								>
+									<span class="text-guru-accent">➜</span>
+									<span class="text-white"
+										>guru run refactor</span
+									><span class="cursor"></span>
+								</div>
+
+								<div class="space-y-3">
+									<div
+										class="agent-row opacity-0 transform translate-y-2 border-l-2 border-blue-500 bg-guru-surface/50 p-3 flex justify-between items-center"
+									>
+										<div>
+											<div
+												class="text-xs font-bold text-blue-400 mb-1"
+											>
+												AGENT_ARCHITECT
+											</div>
+											<div class="text-xs text-guru-dim">
+												Reading src/auth/login.ts...
+											</div>
+										</div>
+										<span
+											class="text-[10px] bg-blue-500/10 text-blue-500 px-2 py-1 rounded"
+											>ACTIVE</span
+										>
+									</div>
+
+									<div
+										class="agent-row opacity-0 transform translate-y-2 border-l-2 border-guru-accent bg-guru-surface/50 p-3 flex justify-between items-center"
+									>
+										<div>
+											<div
+												class="text-xs font-bold text-guru-accent mb-1"
+											>
+												AGENT_TESTER
+											</div>
+											<div class="text-xs text-guru-dim">
+												Running Vitest suite...
+											</div>
+										</div>
+										<span
+											class="text-[10px] bg-guru-accent/10 text-guru-accent px-2 py-1 rounded"
+											>PASS</span
+										>
+									</div>
+
+									<div
+										class="agent-row opacity-0 transform translate-y-2 border border-guru-alert bg-guru-alert/5 p-3 mt-4"
+									>
+										<div
+											class="flex items-center gap-2 text-guru-alert font-bold text-xs mb-2"
+										>
+											<i
+												data-lucide="shield-alert"
+												class="w-4 h-4"></i>
+											SHADOW MODE INTERCEPTION
+										</div>
+										<div class="text-xs text-guru-dim mb-3">
+											Agent requested file write. Approval
+											required.
+										</div>
+										<div class="flex gap-2">
+											<div
+												class="h-1 w-16 bg-guru-alert/20 rounded overflow-hidden"
+											>
+												<div
+													class="h-full bg-guru-alert w-[60%]"
+												>
+												</div>
+											</div>
+											<span
+												class="text-[10px] text-guru-alert"
+												>WAITING...</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section
+		id="architecture"
+		class="py-32 border-b border-guru-border bg-[#080808]"
+	>
+		<div class="max-w-7xl mx-auto px-6">
+			<div class="mb-20 md:w-2/3">
+				<h2
+					class="font-display text-4xl md:text-5xl font-bold mb-6 text-white"
+				>
+					CAPABILITY MEETS <span class="text-guru-dim">CONTROL.</span>
+				</h2>
+				<p class="font-mono text-guru-dim text-lg leading-relaxed">
+					Standard AI agents are either unsafe or useless. Guru
+					provides a sovereign runtime that grants agents raw system
+					access, wrapped in a programmable immune system.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="brutal-card p-8 group">
+					<div
+						class="w-12 h-12 bg-guru-bg border border-guru-border flex items-center justify-center mb-6 group-hover:border-guru-accent transition-colors"
+					>
+						<i
+							data-lucide="cpu"
+							class="icon-glow w-6 h-6 text-guru-dim group-hover:text-guru-accent transition-all"
+						></i>
+					</div>
+					<h3 class="font-display text-xl font-bold mb-4 text-white">
+						System Wrappers
+					</h3>
+					<p
+						class="font-mono text-sm text-guru-dim leading-relaxed group-hover:text-white transition-colors"
+					>
+						Agents get raw access to your OS. <strong
+							>Shell Node</strong
+						> for commands. <strong>File Node</strong> for I/O. <strong
+							>Browser Node</strong
+						> for web automation. No sandboxes, just regulated power.
+					</p>
+				</div>
+				<div class="brutal-card p-8 group">
+					<div
+						class="w-12 h-12 bg-guru-bg border border-guru-border flex items-center justify-center mb-6 group-hover:border-guru-accent transition-colors"
+					>
+						<i
+							data-lucide="shield-check"
+							class="icon-glow w-6 h-6 text-guru-dim group-hover:text-guru-accent transition-all"
+						></i>
+					</div>
+					<h3 class="font-display text-xl font-bold mb-4 text-white">
+						Liner Engine
+					</h3>
+					<p
+						class="font-mono text-sm text-guru-dim leading-relaxed group-hover:text-white transition-colors"
+					>
+						Safety is middleware. <strong>Liners</strong> intercept every
+						agent event before execution. They enforce budgets, check
+						policies, and trigger Shadow Mode reviews.
+					</p>
+				</div>
+				<div class="brutal-card p-8 group">
+					<div
+						class="w-12 h-12 bg-guru-bg border border-guru-border flex items-center justify-center mb-6 group-hover:border-guru-accent transition-colors"
+					>
+						<i
+							data-lucide="git-branch"
+							class="icon-glow w-6 h-6 text-guru-dim group-hover:text-guru-accent transition-all"
+						></i>
+					</div>
+					<h3 class="font-display text-xl font-bold mb-4 text-white">
+						State Graph
+					</h3>
+					<p
+						class="font-mono text-sm text-guru-dim leading-relaxed group-hover:text-white transition-colors"
+					>
+						We replaced chat logs with a Graph Database. Guru tracks
+						the <strong>State</strong> of the project (Goals, Tasks,
+						Facts), pruning dead ends to save tokens and improve reasoning.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-32 border-b border-guru-border bg-guru-card">
+		<div
+			class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center"
+		>
+			<div class="lg:col-span-7 relative">
+				<div class="bg-black border border-guru-border p-1">
+					<div
+						class="bg-[#1a1a1a] p-2 flex gap-2 border-b border-guru-border"
+					>
+						<div class="font-mono text-[10px] text-guru-dim">
+							workbench.wasm — rust — 14kb
+						</div>
+					</div>
+					<div class="p-6 font-mono text-xs space-y-4">
+						<div class="text-guru-dim">
+							// Agent requested: "Parse weird binary format"
+						</div>
+						<div class="text-guru-dim">
+							// Action: Compiling custom tool...
+						</div>
+
+						<div class="flex gap-1 my-4">
+							<div class="h-2 w-2 bg-guru-accent animate-pulse">
+							</div>
+							<div
+								class="h-2 w-2 bg-guru-accent animate-pulse delay-75"
+							>
+							</div>
+							<div
+								class="h-2 w-2 bg-guru-accent animate-pulse delay-150"
+							>
+							</div>
+							<div
+								class="h-2 w-full bg-guru-border relative overflow-hidden"
+							>
+								<div
+									class="absolute top-0 left-0 h-full bg-guru-accent w-[80%]"
+								>
+								</div>
+							</div>
+						</div>
+
+						<div class="text-white">
+							<span class="text-guru-accent">✓</span> Tool Compiled
+							(WASM)<br />
+							<span class="text-guru-accent">✓</span> Safety Liners
+							Applied<br />
+							<span class="text-guru-accent">✓</span> Hot-Loaded into
+							Runtime
+						</div>
+
+						<div
+							class="p-3 border border-guru-accent/30 bg-guru-accent/5 mt-4 text-guru-accent"
+						>
+							> New Capability Unlocked: binary_parser_v1
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lg:col-span-5">
+				<h2 class="font-display text-4xl font-bold mb-6 text-white">
+					THE <span class="text-guru-accent">SELF-EXTENDING</span><br
+					/>RUNTIME.
+				</h2>
+				<p class="font-mono text-guru-dim text-lg leading-relaxed mb-8">
+					If an agent needs a tool that doesn't exist, it builds it.
+					Guru's <strong>Workbench</strong> compiles agent-written code
+					into sandboxed WASM modules on the fly.
+				</p>
+				<p
+					class="font-mono text-sm text-white border-l-2 border-guru-accent pl-4"
+				>
+					Your swarm doesn't just use software.<br />It invents it.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section
+		id="harness"
+		class="py-32 bg-guru-bg relative overflow-hidden border-b border-guru-border"
+	>
+		<div
+			class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center"
+		>
+			<div>
+				<div class="flex items-center gap-2 mb-6">
+					<div class="h-px w-8 bg-guru-accent"></div>
+					<span
+						class="font-mono text-guru-accent text-xs font-bold tracking-widest uppercase"
+						>The Safety Engine</span
+					>
+				</div>
+
+				<h2
+					class="font-display text-5xl md:text-6xl font-bold mb-8 text-white"
+				>
+					SHADOW MODE
+				</h2>
+
+				<p class="font-mono text-guru-dim text-lg mb-8 leading-relaxed">
+					When an agent tries to delete a file or push code, Guru
+					freezes time. The action executes in a virtual layer first.
+					You see the diff. You hold the keys.
+				</p>
+
+				<div class="space-y-6 font-mono text-sm">
+					<div class="flex items-start gap-4">
+						<div
+							class="w-6 h-6 rounded bg-guru-surface border border-guru-border flex items-center justify-center text-guru-accent font-bold"
+						>
+							1
+						</div>
+						<div>
+							<div class="text-white font-bold mb-1">
+								Pre-Flight Simulation
+							</div>
+							<div class="text-guru-dim">
+								Guru spins up a temporary container and runs
+								your tests against the agent's changes.
+							</div>
+						</div>
+					</div>
+					<div class="flex items-start gap-4">
+						<div
+							class="w-6 h-6 rounded bg-guru-surface border border-guru-border flex items-center justify-center text-guru-accent font-bold"
+						>
+							2
+						</div>
+						<div>
+							<div class="text-white font-bold mb-1">
+								Deterministic Review
+							</div>
+							<div class="text-guru-dim">
+								Approve to commit. Discard to reset. The agent
+								learns from your rejection.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="relative group">
+				<div
+					class="absolute -inset-1 bg-guru-accent/20 blur-xl rounded-lg opacity-50 group-hover:opacity-100 transition duration-1000"
+				>
+				</div>
+
+				<div
+					class="bg-[#0A0A0A] border border-guru-border p-6 relative shadow-2xl"
+				>
+					<div
+						class="flex justify-between items-start mb-6 border-b border-guru-border pb-4"
+					>
+						<div class="flex gap-3">
+							<div
+								class="p-2 bg-guru-alert/10 border border-guru-alert/20 rounded text-guru-alert"
+							>
+								<i data-lucide="alert-triangle" class="w-5 h-5"
+								></i>
+							</div>
+							<div>
+								<div
+									class="font-display font-bold text-lg text-white"
+								>
+									Review Pending Action
+								</div>
+								<div class="font-mono text-xs text-guru-dim">
+									High Risk • File System Modification
+								</div>
+							</div>
+						</div>
+						<div
+							class="font-mono text-xs bg-guru-surface border border-guru-border px-2 py-1 text-guru-dim"
+						>
+							ID: #8A2B
+						</div>
+					</div>
+
+					<div
+						class="font-mono text-xs bg-[#050505] border border-guru-border p-4 mb-6"
+					>
+						<div class="text-guru-dim mb-2">// src/server.ts</div>
+						<div class="space-y-1">
+							<div class="text-guru-dim opacity-50">
+								const app = express();
+							</div>
+							<div class="text-red-500 bg-red-500/10 px-1">
+								- app.listen(3000);
+							</div>
+							<div
+								class="text-guru-accent bg-guru-accent/10 px-1"
+							>
+								+ app.listen(process.env.PORT || 3000);
+							</div>
+							<div class="text-guru-dim opacity-50">
+								console.log('Server started');
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="flex items-center gap-2 font-mono text-xs text-guru-accent mb-6"
+					>
+						<i data-lucide="check-circle-2" class="w-4 h-4"></i>
+						<span>Pre-flight check: Tests Passed (42/42)</span>
+					</div>
+
+					<div class="grid grid-cols-2 gap-4">
+						<button
+							class="border border-guru-border text-guru-dim py-3 font-mono font-bold text-xs hover:bg-white hover:text-black transition-colors uppercase"
+						>
+							Discard
+						</button>
+						<button
+							class="bg-guru-accent text-black py-3 font-mono font-bold text-xs hover:bg-white transition-colors uppercase shadow-[0_0_15px_rgba(0,255,65,0.3)]"
+						>
+							Approve & Execute
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section
+		id="runtime"
+		class="py-32 border-b border-guru-border bg-[#050505]"
+	>
+		<div class="max-w-7xl mx-auto px-6 text-center mb-20">
+			<h2 class="font-display text-4xl font-bold mb-6 text-white">
+				BUILT ON <span class="text-guru-accent">HAPPEN</span>
+			</h2>
+			<p class="font-mono text-guru-dim max-w-2xl mx-auto">
+				Agents should not be heavy processes. In Guru, agents are
+				ephemeral <strong>Events</strong>. Spawn 1,000 micro-agents to
+				refactor 1,000 files simultaneously. Zero overhead.
+			</p>
+			<button class="mt-8">
+				<a
+					href="https://insert-name-here.gitbook.io/happen/"
+					target="_blank"
+					class="group relative inline-flex items-center justify-center gap-3 px-6 py-3 overflow-hidden font-mono font-bold text-white transition-all duration-300 bg-black border border-guru-border hover:border-guru-accent hover:shadow-[4px_4px_0px_#00FF41]"
+				>
+					<div
+						class="absolute inset-0 w-full h-full bg-[linear-gradient(to_bottom,transparent_50%,rgba(0,255,65,0.1)_50%)] bg-[length:100%_4px] pointer-events-none"
+					>
+					</div>
+
+					<i
+						data-lucide="book-open"
+						class="w-4 h-4 text-guru-dim group-hover:text-guru-accent transition-colors"
+					></i>
+
+					<span
+						class="relative text-xs tracking-[0.2em] uppercase group-hover:text-guru-accent transition-colors"
+					>
+						Access_Docs
+					</span>
+
+					<span
+						class="w-2 h-4 bg-guru-accent opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity"
+					></span>
+
+					<div
+						class="absolute top-0 left-0 w-1 h-1 bg-guru-border group-hover:bg-guru-accent transition-colors"
+					>
+					</div>
+					<div
+						class="absolute bottom-0 right-0 w-1 h-1 bg-guru-border group-hover:bg-guru-accent transition-colors"
+					>
+					</div>
+				</a>
+			</button>
+		</div>
+
+		<div
+			class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-guru-border border border-guru-border bg-guru-surface"
+		>
+			<div
+				class="p-8 text-center group hover:bg-[#0F0F0F] transition-colors"
+			>
+				<div
+					class="font-display text-4xl font-bold text-white mb-2 group-hover:text-guru-accent transition-colors"
+				>
+					10k+
+				</div>
+				<div
+					class="font-mono text-xs text-guru-dim font-bold tracking-widest uppercase"
+				>
+					Concurrent Agents
+				</div>
+			</div>
+			<div
+				class="p-8 text-center group hover:bg-[#0F0F0F] transition-colors"
+			>
+				<div
+					class="font-display text-4xl font-bold text-white mb-2 group-hover:text-guru-accent transition-colors"
+				>
+					0ms
+				</div>
+				<div
+					class="font-mono text-xs text-guru-dim font-bold tracking-widest uppercase"
+				>
+					Idle Latency
+				</div>
+			</div>
+			<div
+				class="p-8 text-center group hover:bg-[#0F0F0F] transition-colors"
+			>
+				<div
+					class="font-display text-4xl font-bold text-white mb-2 group-hover:text-guru-accent transition-colors"
+				>
+					100%
+				</div>
+				<div
+					class="font-mono text-xs text-guru-dim font-bold tracking-widest uppercase"
+				>
+					Local Runtime
+				</div>
+			</div>
+			<div
+				class="p-8 text-center group hover:bg-[#0F0F0F] transition-colors"
+			>
+				<div
+					class="font-display text-4xl font-bold text-white mb-2 group-hover:text-guru-accent transition-colors"
+				>
+					WASM
+				</div>
+				<div
+					class="font-mono text-xs text-guru-dim font-bold tracking-widest uppercase"
+				>
+					Dynamic Tools
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="pricing" class="py-32 bg-guru-bg">
+		<div class="max-w-7xl mx-auto px-6">
+			<div class="text-center mb-20">
+				<h2
+					class="font-display text-4xl md:text-5xl font-bold mb-6 text-white"
+				>
+					THE HARNESS IS FREE.<br /><span class="text-guru-dim"
+						>THE POWER IS METERED.</span
+					>
+				</h2>
+			</div>
+
+			<div
+				class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+			>
+				<div
+					class="border border-guru-border bg-guru-surface p-8 flex flex-col hover:border-guru-dim transition-colors"
+				>
+					<div
+						class="font-mono text-xs font-bold text-guru-dim mb-4 tracking-widest"
+					>
+						DEVELOPER
+					</div>
+					<div
+						class="font-display text-5xl font-bold text-white mb-2"
+					>
+						$0<span
+							class="text-lg text-guru-dim font-mono font-normal"
+							>/mo</span
+						>
+					</div>
+					<p class="font-mono text-xs text-guru-dim mb-8 h-10">
+						Bring Your Own Key (BYOK). Full local harness. Zero
+						marginal cost to us.
+					</p>
+
+					<ul
+						class="space-y-4 mb-10 font-mono text-sm text-guru-dim flex-1"
+					>
+						<li class="flex gap-3">
+							<i data-lucide="check" class="w-4 h-4 text-white"
+							></i> Unlimited Agents
+						</li>
+						<li class="flex gap-3">
+							<i data-lucide="check" class="w-4 h-4 text-white"
+							></i> Shadow Mode
+						</li>
+						<li class="flex gap-3">
+							<i data-lucide="check" class="w-4 h-4 text-white"
+							></i> Local State Graph
+						</li>
+						<li class="flex gap-3">
+							<i data-lucide="check" class="w-4 h-4 text-white"
+							></i> Workbench (WASM)
+						</li>
+					</ul>
+
+					<button
+						class="w-full py-4 border border-guru-border text-white font-mono text-xs font-bold hover:bg-white hover:text-black transition-all uppercase tracking-widest"
+						>Download</button
+					>
+				</div>
+
+				<div
+					class="border border-guru-accent bg-guru-accent/5 p-8 flex flex-col relative transform md:-translate-y-4"
+				>
+					<div
+						class="absolute top-0 right-0 bg-guru-accent text-black text-[10px] font-bold font-mono px-3 py-1"
+					>
+						POPULAR
+					</div>
+					<div
+						class="font-mono text-xs font-bold text-guru-accent mb-4 tracking-widest"
+					>
+						GROWTH
+					</div>
+					<div
+						class="font-display text-5xl font-bold text-white mb-2"
+					>
+						$20<span
+							class="text-lg text-guru-dim font-mono font-normal"
+							>/mo</span
+						>
+					</div>
+					<p class="font-mono text-xs text-guru-dim mb-8 h-10">
+						Cloud Sync & Team Governance. Includes $20 Credit Pack.
+					</p>
+
+					<ul
+						class="space-y-4 mb-10 font-mono text-sm text-white flex-1"
+					>
+						<li class="flex gap-3">
+							<i
+								data-lucide="check"
+								class="w-4 h-4 text-guru-accent"></i> Everything
+							in Dev
+						</li>
+						<li class="flex gap-3">
+							<i
+								data-lucide="check"
+								class="w-4 h-4 text-guru-accent"></i> Cloud State
+							Sync
+						</li>
+						<li class="flex gap-3">
+							<i
+								data-lucide="check"
+								class="w-4 h-4 text-guru-accent"></i> Shared Policies
+						</li>
+						<li class="flex gap-3">
+							<i
+								data-lucide="check"
+								class="w-4 h-4 text-guru-accent"></i> $20 Credits
+							Included
+						</li>
+					</ul>
+
+					<button
+						class="w-full py-4 bg-guru-accent text-black font-mono text-xs font-bold hover:bg-white transition-all uppercase tracking-widest shadow-[0_0_20px_rgba(0,255,65,0.3)]"
+						>Subscribe</button
+					>
+				</div>
+
+				<div
+					class="border border-guru-border bg-guru-surface p-8 flex flex-col hover:border-guru-dim transition-colors"
+				>
+					<div
+						class="font-mono text-xs font-bold text-guru-dim mb-4 tracking-widest"
+					>
+						SCALE
+					</div>
+					<div
+						class="font-display text-5xl font-bold text-white mb-2"
+					>
+						$49<span
+							class="text-lg text-guru-dim font-mono font-normal"
+							>/mo</span
+						>
+					</div>
+					<p class="font-mono text-xs text-guru-dim mb-8 h-10">
+						Managed Compute & Pre-Flight Sim. Includes $50 Credit
+						Pack.
+					</p>
+
+					<ul
+						class="space-y-4 mb-10 font-mono text-sm text-guru-dim flex-1"
+					>
+						<li class="flex gap-3">
+							<i data-lucide="check" class="w-4 h-4 text-white"
+							></i> Pre-Flight Simulation
+						</li>
+						<li class="flex gap-3">
+							<i data-lucide="check" class="w-4 h-4 text-white"
+							></i> Managed Models (Opus)
+						</li>
+						<li class="flex gap-3">
+							<i data-lucide="check" class="w-4 h-4 text-white"
+							></i> Pay-As-You-Go Overage
+						</li>
+						<li class="flex gap-3">
+							<i data-lucide="check" class="w-4 h-4 text-white"
+							></i> Priority Support
+						</li>
+					</ul>
+
+					<button
+						class="w-full py-4 border border-guru-border text-guru-dim font-mono text-xs font-bold hover:border-white hover:text-white transition-all uppercase tracking-widest"
+						>Contact Sales</button
+					>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section
+		id="newsletter"
+		class="py-24 border-t border-guru-border bg-[#080808] relative overflow-hidden"
+	>
+		<div
+			class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-full bg-gradient-to-b from-transparent via-guru-border to-transparent"
+		>
+		</div>
+		<div
+			class="absolute top-1/2 left-0 -translate-y-1/2 w-full h-px bg-gradient-to-r from-transparent via-guru-border to-transparent"
+		>
+		</div>
+
+		<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+			<div
+				class="inline-flex items-center gap-2 border border-guru-accent/30 bg-guru-accent/5 px-3 py-1 rounded-full mb-8"
+			>
+				<div
+					class="w-1.5 h-1.5 bg-guru-accent rounded-full animate-pulse"
+				>
+				</div>
+				<span
+					class="font-mono text-[10px] font-bold text-guru-accent tracking-widest uppercase"
+					>Uplink Ready</span
+				>
+			</div>
+
+			<h2
+				class="font-display text-4xl md:text-5xl font-bold mb-6 text-white"
+			>
+				JOIN THE <span class="text-guru-dim">NETWORK.</span>
+			</h2>
+
+			<p
+				class="font-mono text-guru-dim text-sm mb-12 max-w-lg mx-auto leading-relaxed"
+			>
+				Receive critical system updates, release notes, and agentic
+				strategies. Zero noise. Pure signal.
+			</p>
+
+			<form
+				class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto"
+			>
+				<div class="relative flex-1 group">
+					<div
+						class="absolute inset-0 bg-guru-accent/20 blur opacity-0 group-hover:opacity-20 transition duration-500"
+					>
+					</div>
+					<div
+						class="relative flex items-center bg-black border border-guru-border p-1 focus-within:border-guru-accent transition-colors h-14"
+					>
+						<div
+							class="pl-4 pr-2 text-guru-accent font-mono text-sm select-none font-bold"
+						>
+							>
+						</div>
+						<input
+							type="email"
+							placeholder="enter_email_address..."
+							class="w-full bg-transparent border-none text-white font-mono text-sm focus:ring-0 placeholder:text-guru-dim/30 h-full outline-none"
+							required
+						/>
+					</div>
+				</div>
+
+				<button
+					type="submit"
+					class="h-14 bg-white text-black border border-white px-8 font-mono font-bold uppercase tracking-widest text-sm hover:bg-guru-accent hover:border-guru-accent hover:shadow-[4px_4px_0px_#00FF41] transition-all whitespace-nowrap"
+				>
+					Initialize
+				</button>
+			</form>
+
+			<div
+				class="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-2 text-[10px] font-mono text-guru-dim/40 uppercase tracking-widest"
+			>
+				<span class="flex items-center gap-2"
+					><i data-lucide="lock" class="w-3 h-3"></i> ENCRYPTION: AES-256</span
+				>
+				<span class="flex items-center gap-2"
+					><i data-lucide="radio" class="w-3 h-3"></i> FREQUENCY: LOW</span
+				>
+				<span class="flex items-center gap-2"
+					><i data-lucide="shield" class="w-3 h-3"></i> NO SPAM PROTOCOL</span
+				>
+			</div>
+		</div>
+	</section>
+
+	<footer class="py-16 border-t border-guru-border bg-black">
+		<div
+			class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8"
+		>
+			<div
+				class="flex items-center gap-3 font-display font-bold text-2xl tracking-tighter"
+			>
+				<div class="w-4 h-4 bg-guru-accent"></div>
+				GURU
+			</div>
+
+			<div class="font-mono text-[10px] text-guru-dim tracking-widest">
+				SYSTEM STATUS: ONLINE // V2.0.4 // TORONTO_NODE
+			</div>
+
+			<div class="flex gap-8">
+				<a
+					href="#"
+					class="text-guru-dim hover:text-guru-accent transition-colors"
+					><i data-lucide="github" class="w-5 h-5"></i></a
+				>
+				<a
+					href="#"
+					class="text-guru-dim hover:text-guru-accent transition-colors"
+					><i data-lucide="twitter" class="w-5 h-5"></i></a
+				>
+				<a
+					href="#"
+					class="text-guru-dim hover:text-guru-accent transition-colors"
+					><i data-lucide="message-circle" class="w-5 h-5"></i></a
+				>
+			</div>
+		</div>
+	</footer>
+
+	<script is:inline>
+		// Initialize Lucide Icons
+		lucide.createIcons();
+
+		// HERO TYPING ANIMATION
+		const typeText = "guru run refactor";
+		let typeIndex = 0;
+
+		function typeHero() {
+			const el = document.querySelector("#hero-typewriter"); // Placeholder if needed
+		}
+
+		// Simple Reveal Animation
+		gsap.registerPlugin(ScrollTrigger);
+
+		gsap.utils.toArray(".reveal-text").forEach((el) => {
+			gsap.to(el, {
+				opacity: 1,
+				y: 0,
+				duration: 1,
+				scrollTrigger: {
+					trigger: el,
+					start: "top 85%",
+				},
+			});
+		});
+
+		// Agent Card Stagger Animation (Hero)
+		const timeline = gsap.timeline({ repeat: -1, repeatDelay: 3 });
+		const cards = document.querySelectorAll(".agent-row");
+
+		cards.forEach((card, i) => {
+			timeline.to(
+				card,
+				{
+					opacity: 1,
+					y: 0,
+					duration: 0.4,
+					ease: "power2.out",
+				},
+				i * 1.5,
+			); // Stagger start times
+		});
+
+		// Reset animation for loop
+		timeline.to(cards, {
+			opacity: 0,
+			y: 10,
+			duration: 0.5,
+			delay: 3,
+		});
+	</script>
 </Layout>

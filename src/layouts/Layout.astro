@@ -1,3 +1,7 @@
+---
+import "../styles/global.css";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,9 +9,30 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>GURU | AI Mission Control</title>
+		<meta
+			name="description"
+			content="The Secure Runtime for Autonomous Development."
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+			is:inline></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+			is:inline></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"
+			is:inline></script>
+		<script src="https://unpkg.com/lucide@latest" is:inline></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&family=Syne:wght@400..800&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body>
+	<body class="overflow-x-hidden">
+		<div class="scanline"></div>
 		<slot />
 	</body>
 </html>
